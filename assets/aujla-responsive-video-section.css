@@ -1,0 +1,23 @@
+.ag-responsive-video-wrapper {
+  width: 100%;
+  overflow: hidden;
+}
+
+.ag-responsive-video-wrapper video {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  display: block;
+}
+
+@media only screen and (min-width: 769px) {
+  .ag-responsive-video-mobile {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .ag-responsive-video-desktop {
+    display: none;
+  }
+}

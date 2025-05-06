@@ -1,0 +1,106 @@
+{{ 'aujla-responsive-video-section.css' | asset_url | stylesheet_tag }}
+
+<div
+  class="ag-responsive-video-wrapper"
+  style="padding-top: {{ section.settings.padding_top }}px; padding-bottom: {{ section.settings.padding_bottom }}px;"
+>
+  <div class="ag-responsive-video-desktop">
+    {{
+      section.settings.self_hosted_video_desktop
+      | video_tag:
+        controls: section.settings.video_controllers,
+        autoplay: section.settings.video_autoplay,
+        loop: section.settings.loop,
+        muted: section.settings.video_muted,
+        width: '100%'
+    }}
+  </div>
+
+  <div class="ag-responsive-video-mobile">
+    {{
+      section.settings.self_hosted_video_mobile
+      | video_tag:
+        controls: section.settings.video_controllers,
+        autoplay: section.settings.video_autoplay,
+        loop: section.settings.video_loop,
+        muted: section.settings.video_muted,
+        width: '100%'
+    }}
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Responsive Video | Aujla",
+  "tag": "section",
+  "class": "ag-responsive-video",
+  "disabled_on": {
+    "groups": ["header", "footer"]
+  },
+  "settings": [
+    {
+      "type": "video",
+      "id": "self_hosted_video_desktop",
+      "label": "Desktop: Self Hosted Video"
+    },
+    {
+      "type": "video",
+      "id": "self_hosted_video_mobile",
+      "label": "Mobile: Self Hosted Video"
+    },
+    {
+      "type": "checkbox",
+      "id": "video_autoplay",
+      "label": "Autoplay video",
+      "default": false
+    },
+    {
+      "type": "checkbox",
+      "id": "video_controllers",
+      "label": "Show video controllers",
+      "default": false
+    },
+    {
+      "type": "checkbox",
+      "id": "video_loop",
+      "label": "Loop video",
+      "default": false
+    },
+    {
+      "type": "checkbox",
+      "id": "video_muted",
+      "label": "Mute video",
+      "default": false
+    },
+    {
+      "type": "header",
+      "content": "t:sections.all.padding.section_padding_heading"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_top",
+      "default": 40
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_bottom",
+      "default": 40
+    }
+  ],
+  "presets": [
+    {
+      "name": "Responsive Video Section | Aujla"
+    }
+  ]
+}
+{% endschema %}
