@@ -1,7 +1,22 @@
+{{ 'aujla-responsive-accordion.css' | asset_url | stylesheet_tag }}
+<script src="{{ 'aujla-responsive-accordion.js' | asset_url }}" defer></script>
+
 <div
-  class="color-{{section.settings.color_scheme}} gradient"
+  class="custom-responsive-accordion-wrapper color-{{section.settings.color_scheme}} gradient"
   style="padding-top: {{ section.settings.padding_top }}px; padding-bottom: {{ section.settings.padding_bottom }}px;"
-></div>
+>
+  {% for block in section.blocks %}
+    <div class="custom-responsive-accordion-item">
+      <button class="custom-responsive-accordion-header">
+        {{ block.settings['custom-responsive-accordion-title'] }}
+        <span class="custom-accordion-add-icon">+</span>
+      </button>
+      <div class="custom-responsive-accordion-content">
+        {{ block.settings['custom-responsive-accordion-content'] }}
+      </div>
+    </div>
+  {% endfor %}
+</div>
 
 {% schema %}
 {
