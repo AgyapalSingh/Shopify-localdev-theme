@@ -1,34 +1,62 @@
 {{ 'aujla-responsive-video-section.css' | asset_url | stylesheet_tag }}
 
 <div
-  class="ag-responsive-video-wrapper"
+  class="ag-responsive-video-wrapper color-{{section.settings.color_scheme}} gradient"
   style="padding-top: {{ section.settings.padding_top }}px; padding-bottom: {{ section.settings.padding_bottom }}px;"
   {% if settings.animations_reveal_on_scroll %}
     scroll-trigger animate--slide-in
   {% endif %}
 >
   <div class="ag-responsive-video-desktop">
-    {{
-      section.settings.self_hosted_video_desktop
-      | video_tag:
-        controls: section.settings.video_controllers,
-        autoplay: section.settings.video_autoplay,
-        loop: section.settings.loop,
-        muted: section.settings.video_muted,
-        width: '100%'
-    }}
+    {% if section.settings.link_on_video != blank %}
+      <a href="{{ section.settings.link_on_video }}">
+        {{
+          section.settings.self_hosted_video_desktop
+          | video_tag:
+            controls: section.settings.video_controllers,
+            autoplay: section.settings.video_autoplay,
+            loop: section.settings.loop,
+            muted: section.settings.video_muted,
+            width: '100%'
+        }}
+      </a>
+    {% else %}
+      {{
+        section.settings.self_hosted_video_desktop
+        | video_tag:
+          controls: section.settings.video_controllers,
+          autoplay: section.settings.video_autoplay,
+          loop: section.settings.loop,
+          muted: section.settings.video_muted,
+          width: '100%'
+      }}
+    {% endif %}
   </div>
 
   <div class="ag-responsive-video-mobile">
-    {{
-      section.settings.self_hosted_video_mobile
-      | video_tag:
-        controls: section.settings.video_controllers,
-        autoplay: section.settings.video_autoplay,
-        loop: section.settings.video_loop,
-        muted: section.settings.video_muted,
-        width: '100%'
-    }}
+    {% if section.settings.link_on_video != blank %}
+      <a href="{{ section.settings.link_on_video }}">
+        {{
+          section.settings.self_hosted_video_mobile
+          | video_tag:
+            controls: section.settings.video_controllers,
+            autoplay: section.settings.video_autoplay,
+            loop: section.settings.video_loop,
+            muted: section.settings.video_muted,
+            width: '100%'
+        }}
+      </a>
+    {% else %}
+      {{
+        section.settings.self_hosted_video_mobile
+        | video_tag:
+          controls: section.settings.video_controllers,
+          autoplay: section.settings.video_autoplay,
+          loop: section.settings.video_loop,
+          muted: section.settings.video_muted,
+          width: '100%'
+      }}
+    {% endif %}
   </div>
 </div>
 
@@ -74,6 +102,18 @@
       "id": "video_muted",
       "label": "Mute video",
       "default": false
+    },
+    {
+      "type": "url",
+      "id": "link_on_video",
+      "label": "Link",
+      "info": "Add a link to the video or leave it blank"
+    },
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "label": "t:sections.all.colors.label",
+      "default": "scheme-1"
     },
     {
       "type": "header",
