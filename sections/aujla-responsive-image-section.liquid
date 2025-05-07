@@ -1,0 +1,113 @@
+{{ 'aujla-responsive-image-section.css' | asset_url | stylesheet_tag }}
+
+<div
+  class="ag-responsive-image-wrapper color-{{section.settings.color_scheme}} gradient"
+  style="padding-top: {{ section.settings.padding_top }}px; padding-bottom: {{ section.settings.padding_bottom }}px;"
+  {% if settings.animations_reveal_on_scroll %}
+    scroll-trigger animate--slide-in
+  {% endif %}
+>
+  <div class="ag-responsive-image-desktop">
+    {% if section.settings.link_on_image != blank %}
+      <a href="{{ section.settings.link_on_image }}">
+        <img
+          src="{{ section.settings.self_hosted_image_desktop | image_url }}"
+          alt="{{ section.settings.self_hosted_image_desktop }}"
+          height="100%"
+          width="100%"
+        >
+      </a>
+    {% else %}
+      <img
+        src="{{ section.settings.self_hosted_image_desktop | image_url }}"
+        alt="{{ section.settings.self_hosted_image_desktop }}"
+        height="100%"
+        width="100%"
+      >
+    {% endif %}
+  </div>
+
+  <div class="ag-responsive-image-mobile">
+    {% if section.settings.link_on_image != blank %}
+      <a href="{{ section.settings.link_on_image }}">
+        <img
+          src="{{ section.settings.self_hosted_image_mobile | image_url }}"
+          alt="{{ section.settings.self_hosted_image_mobile }}"
+          height="100%"
+          width="100%"
+        >
+      </a>
+    {% else %}
+      <img
+        src="{{ section.settings.self_hosted_image_mobile | image_url }}"
+        alt="{{ section.settings.self_hosted_image_mobile }}"
+        height="100%"
+        width="100%"
+      >
+    {% endif %}
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Responsive Image | Aujla",
+  "tag": "section",
+  "class": "ag-responsive-image",
+  "disabled_on": {
+    "groups": ["header", "footer"]
+  },
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "self_hosted_image_desktop",
+      "label": "Desktop: Image"
+    },
+    {
+      "type": "image_picker",
+      "id": "self_hosted_image_mobile",
+      "label": "Mobile: Image"
+    },
+    {
+      "type": "url",
+      "id": "link_on_image",
+      "label": "Link",
+      "info": "Add a link to the image or leave it blank"
+    },
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "label": "t:sections.all.colors.label",
+      "default": "scheme-1"
+    },
+    {
+      "type": "header",
+      "content": "t:sections.all.padding.section_padding_heading"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_top",
+      "default": 40
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_bottom",
+      "default": 40
+    }
+  ],
+  "presets": [
+    {
+      "name": "Responsive Image | Aujla"
+    }
+  ]
+}
+{% endschema %}

@@ -1,0 +1,20 @@
+.ag-responsive-image-wrapper {
+  width: 100%;
+  overflow: hidden;
+}
+
+.ag-responsive-image-wrapper img {
+  width: 100%;
+}
+
+@media only screen and (min-width: 769px) {
+  .ag-responsive-image-mobile {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .ag-responsive-image-desktop {
+    display: none;
+  }
+}
