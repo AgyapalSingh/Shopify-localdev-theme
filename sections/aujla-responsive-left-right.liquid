@@ -1,3 +1,61 @@
+{{ 'aujla-responsive-left-right.css' | asset_url | stylesheet_tag }}
+
+<div class="ag-product-lr-container">
+  {% for block in section.blocks %}
+    {% if block.type == 'lr-content' %}
+      <div class="ag-product-content-lr">
+        <div class="ag-product-content-lr-image">
+          <div>
+            <img
+              src="{{ block.settings.content_product_image | image_url  }}"
+              alt="{{ block.settings.content_product_title }}"
+              class="product-image ag-desktop-image"
+              height="100%"
+              width="100%"
+            >
+            <img
+              src="{{ block.settings.content_product_image_m | image_url }}"
+              alt="{{ block.settings.content_product_title }}"
+              class="product-image ag-mobile-image"
+              height="100%"
+              width="100%"
+            >
+          </div>
+        </div>
+        <div class="ag-product-content-lr-content">
+          <h2>{{ block.settings.content_product_title }}</h2>
+          <p>{{ block.settings.content_product_desciption }}</p>
+        </div>
+      </div>
+    {% elsif block.type == 'rl-content' %}
+      <div class="ag-product-content-rl">
+        <div class="ag-product-content-rl-content">
+          <h2>{{ block.settings.content_product_title }}</h2>
+          <p>{{ block.settings.content_product_desciption }}</p>
+        </div>
+        <div class="ag-product-content-rl-image">
+          <div>
+            <img
+              src="{{ block.settings.content_product_image | image_url }}"
+              alt="{{ block.settings.content_product_title }}"
+              class="product-image ag-desktop-image"
+              height="100%"
+              width="100%"
+            >
+            <img
+              src="{{ block.settings.content_product_image_m | image_url }}"
+              alt="{{ block.settings.content_product_title }}"
+              class="product-image ag-mobile-image"
+              height="100%"
+              width="100%"
+            >
+          </div>
+        </div>
+      </div>
+    {% endif %}
+  {% endfor %}
+</div>
+
 {% schema %}
 {
   "name": "Responsive Left Right",
