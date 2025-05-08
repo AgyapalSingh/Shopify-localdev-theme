@@ -1,60 +1,78 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
-    "multicolumn": {
-      "type": "multicolumn",
+    "aujla_custom_icons_scroll_8yr9L3": {
+      "type": "aujla-custom-icons-scroll",
       "blocks": {
-        "column1": {
-          "type": "column",
+        "custom_icons_scroll_YNqcHr": {
+          "type": "custom-icons-scroll",
           "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "link_label": "",
-            "link": ""
+            "custom-icons": "shopify://shop_images/Sulphate.jpg"
           }
         },
-        "column2": {
-          "type": "column",
+        "custom_icons_scroll_QUtFYw": {
+          "type": "custom-icons-scroll",
           "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "link_label": "",
-            "link": ""
+            "custom-icons": "shopify://shop_images/Clinically_Proven.jpg"
           }
         },
-        "column3": {
-          "type": "column",
+        "custom_icons_scroll_BBA4QX": {
+          "type": "custom-icons-scroll",
           "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "link_label": "",
-            "link": ""
+            "custom-icons": "shopify://shop_images/GMP.jpg"
+          }
+        },
+        "custom_icons_scroll_NtGCxQ": {
+          "type": "custom-icons-scroll",
+          "settings": {
+            "custom-icons": "shopify://shop_images/Paraben.jpg"
+          }
+        },
+        "custom_icons_scroll_tL3V97": {
+          "type": "custom-icons-scroll",
+          "settings": {
+            "custom-icons": "shopify://shop_images/Plant_Based.jpg"
+          }
+        },
+        "custom_icons_scroll_9nEMaT": {
+          "type": "custom-icons-scroll",
+          "settings": {
+            "custom-icons": "shopify://shop_images/CIR.jpg"
+          }
+        },
+        "custom_icons_scroll_AzgQEg": {
+          "type": "custom-icons-scroll",
+          "settings": {
+            "custom-icons": "shopify://shop_images/Non_Toxic.jpg"
           }
         }
       },
       "block_order": [
-        "column1",
-        "column2",
-        "column3"
+        "custom_icons_scroll_YNqcHr",
+        "custom_icons_scroll_QUtFYw",
+        "custom_icons_scroll_BBA4QX",
+        "custom_icons_scroll_NtGCxQ",
+        "custom_icons_scroll_tL3V97",
+        "custom_icons_scroll_9nEMaT",
+        "custom_icons_scroll_AzgQEg"
       ],
+      "name": "Infinite icons scroll | Aujla",
       "settings": {
-        "title": "",
-        "heading_size": "h1",
-        "image_width": "third",
-        "image_ratio": "adapt",
-        "columns_desktop": 3,
-        "column_alignment": "center",
-        "background_style": "none",
-        "button_label": "",
-        "button_link": "",
-        "swipe_on_mobile": false,
         "color_scheme": "scheme-1",
-        "columns_mobile": "1",
-        "padding_top": 36,
-        "padding_bottom": 36
+        "padding_top": 40,
+        "padding_bottom": 40
       }
     }
   },
   "order": [
-    "multicolumn"
+    "aujla_custom_icons_scroll_8yr9L3"
   ]
 }
