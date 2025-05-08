@@ -1,0 +1,24 @@
+.custom-tabs-nav {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid #ddd;
+}
+.tab-nav-item {
+  padding: 0.75rem 1.5rem;
+  cursor: pointer;
+  border: 1px solid transparent;
+  margin-right: 10px;
+}
+.tab-nav-item.active {
+  border-bottom: 2px solid #000;
+  font-weight: bold;
+}
+.tab-content-item {
+  display: none;
+}
+.tab-content-item.active {
+  display: block;
+}

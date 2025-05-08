@@ -1,3 +1,6 @@
+{{ 'aujla-responsive-tabs.css' | asset_url | stylesheet_tag }}
+<script src="{{ 'aujla-responsive-tabs.js' | asset_url }}" defer></script>
+
 <div
   class="custom-responsive-tabs-wrapper color-{{ section.settings.color_scheme }} gradient"
   style="padding-top: {{ section.settings.padding_top }}px; padding-bottom: {{ section.settings.padding_bottom }}px;"
@@ -22,52 +25,6 @@
     </div>
   {% endif %}
 </div>
-
-<style>
-  .custom-tabs-nav {
-    display: flex;
-    flex-wrap: wrap;
-    list-style: none;
-    padding: 0;
-    margin-bottom: 1rem;
-    border-bottom: 2px solid #ddd;
-  }
-  .tab-nav-item {
-    padding: 0.75rem 1.5rem;
-    cursor: pointer;
-    border: 1px solid transparent;
-    margin-right: 10px;
-  }
-  .tab-nav-item.active {
-    border-bottom: 2px solid #000;
-    font-weight: bold;
-  }
-  .tab-content-item {
-    display: none;
-  }
-  .tab-content-item.active {
-    display: block;
-  }
-</style>
-
-<script>
-  document.addEventListener('DOMContentLoaded', function () {
-    const tabNavItems = document.querySelectorAll('.tab-nav-item');
-    const tabContentItems = document.querySelectorAll('.tab-content-item');
-
-    tabNavItems.forEach((item) => {
-      item.addEventListener('click', function () {
-        const target = this.getAttribute('data-tab');
-
-        tabNavItems.forEach((nav) => nav.classList.remove('active'));
-        tabContentItems.forEach((content) => content.classList.remove('active'));
-
-        this.classList.add('active');
-        document.getElementById(target).classList.add('active');
-      });
-    });
-  });
-</script>
 
 {% schema %}
 {
