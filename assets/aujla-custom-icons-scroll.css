@@ -37,7 +37,7 @@
 
 @media screen and (max-width: 480px) {
   .custom-scroll-icons-wrapper {
-    max-width: 95%;
+    max-width: 90%;
   }
   .ccustom-scroll-icons-container img {
     max-height: 110px;
