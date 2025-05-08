@@ -1,0 +1,45 @@
+.custom-scroll-icons-wrapper {
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.custom-scroll-icons-container {
+  display: flex;
+  width: max-content;
+  animation: scroll-left 30s linear infinite;
+}
+
+.custom-scroll-icons-container img {
+  max-height: 140px;
+  flex-shrink: 0;
+}
+
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 1000px) {
+  .custom-scroll-icons-wrapper {
+    max-width: 90%;
+  }
+  .custom-scroll-icons-container img {
+    max-height: 110px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .custom-scroll-icons-wrapper {
+    max-width: 95%;
+  }
+  .ccustom-scroll-icons-container img {
+    max-height: 110px;
+  }
+}
