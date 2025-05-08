@@ -1,3 +1,30 @@
+<div
+  class="custom-infinite-scroll-wrapper color-{{section.settings.color_scheme}} gradient"
+  style="padding-top: {{ section.settings.padding_top }}px; padding-bottom: {{ section.settings.padding_bottom }}px;"
+  {% if settings.animations_reveal_on_scroll %}
+    scroll-trigger animate--slide-in
+  {% endif %}
+>
+  <div class="custom-scroll-icons-wrapper">
+    <div class="custom-scroll-icons-container">
+      {% for block in section.blocks %}
+        <img
+          src="{{ block.settings.custom-icons | image_url }}"
+          height="100%"
+          width="100%"
+        >
+      {% endfor %}
+      {% for block in section.blocks %}
+        <img
+          src="{{ block.settings.custom-icons | image_url }}"
+          height="100%"
+          width="100%"
+        >
+      {% endfor %}
+    </div>
+  </div>
+</div>
+
 {% schema %}
 {
   "name": "Infinite icons scroll",
