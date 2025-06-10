@@ -19,4 +19,10 @@
 
 .ag-reels-videos video {
   width: 300px;
+  scale: 0.8;
+  transition: scale 0.3s ease-in-out;
+}
+
+.ag-reels-videos video:hover {
+  scale: 1;
 }
