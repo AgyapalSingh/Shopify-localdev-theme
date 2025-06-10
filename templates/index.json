@@ -9,6 +9,30 @@
  */
 {
   "sections": {
+    "rich_text_3kQGqt": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_QfiKyf": {
+          "type": "heading",
+          "settings": {
+            "heading": "SHOPIFY-LOCALDEV-AUJLA",
+            "heading_size": "h2"
+          }
+        }
+      },
+      "block_order": [
+        "heading_QfiKyf"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "scheme-3",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 40
+      }
+    },
     "aujla_responsive_video_section_dnTDD8": {
       "type": "aujla-responsive-video-section",
       "name": "Responsive Video Section | Aujla",
@@ -21,7 +45,7 @@
         "video_muted": true,
         "link_on_video": "",
         "color_scheme": "scheme-3",
-        "padding_top": 100,
+        "padding_top": 0,
         "padding_bottom": 0
       }
     },
@@ -170,6 +194,12 @@
     "aujla_custom_icons_scroll_8yr9L3": {
       "type": "aujla-custom-icons-scroll",
       "blocks": {
+        "custom_icons_scroll_RaEXeH": {
+          "type": "custom-icons-scroll",
+          "settings": {
+            "custom-icons": "shopify://shop_images/Cruelty_Free.jpg"
+          }
+        },
         "custom_icons_scroll_YNqcHr": {
           "type": "custom-icons-scroll",
           "settings": {
@@ -214,6 +244,7 @@
         }
       },
       "block_order": [
+        "custom_icons_scroll_RaEXeH",
         "custom_icons_scroll_YNqcHr",
         "custom_icons_scroll_QUtFYw",
         "custom_icons_scroll_BBA4QX",
@@ -268,6 +299,7 @@
     }
   },
   "order": [
+    "rich_text_3kQGqt",
     "aujla_responsive_video_section_dnTDD8",
     "aujla_responsive_left_right_fUtPYN",
     "aujla_responsive_image_section_pP8d3V",
