@@ -13,7 +13,7 @@
           class="tabs-collection-button {% if forloop.first %}active{% endif %}"
           data-tab="tab-{{ block.id }}"
         >
-          <div>{{ block.settings['tabs-collection-title'] }}</div>
+          {{ block.settings['tabs-collection-title'] }}
         </button>
       {% endfor %}
     </div>
