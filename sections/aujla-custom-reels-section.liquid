@@ -1,0 +1,137 @@
+{{ 'aujla-custom-reels-section.css' | asset_url | stylesheet_tag }}
+
+<div
+  class="ag-reels-container color-{{ section.settings.color_scheme }} gradient"
+  style="padding-top: {{ section.settings.padding_top }}px; padding-bottom: {{ section.settings.padding_bottom }}px;"
+>
+  <div class="ag-reels-header">
+    <h2>{{ section.settings.reels_section_title }}</h2>
+    <div class="ag-reels-description">{{ section.settings.reels_section_description }}</div>
+  </div>
+
+  <div class="ag-reels-videos">
+    {% for block in section.blocks %}
+      {% if block.settings.self_hosted_video %}
+        {{
+          block.settings.self_hosted_video
+          | video_tag:
+            controls: block.settings.video_controllers,
+            autoplay: block.settings.video_autoplay,
+            loop: block.settings.video_loop,
+            muted: block.settings.video_muted,
+            width: '100%'
+        }}
+      {% endif %}
+    {% endfor %}
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Responsive Reels | Aujla",
+  "tag": "section",
+  "class": "ag-responsive-reels",
+  "disabled_on": {
+    "groups": ["header", "footer"]
+  },
+  "settings": [
+    {
+      "type": "text",
+      "id": "reels_section_title",
+      "label": "Title",
+      "default": "They Love Us"
+    },
+    {
+      "type": "richtext",
+      "id": "reels_section_description",
+      "label": "Description",
+      "default": "<p>Becuase we love them too! Our customers are our biggest fans, and they love sharing their experiences with our products.</p>"
+    },
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "label": "t:sections.all.colors.label",
+      "default": "scheme-1"
+    },
+    {
+      "type": "header",
+      "content": "t:sections.all.padding.section_padding_heading"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_top",
+      "default": 40
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_bottom",
+      "default": 40
+    }
+  ],
+  "blocks": [
+    {
+      "name": "Reel",
+      "type": "custom-reel-item",
+      "settings": [
+        {
+          "type": "video",
+          "id": "self_hosted_video",
+          "label": "Self Hosted Video",
+          "info": "Aspect ratio is 16:9, Size should not more than 10 MB."
+        },
+        {
+          "type": "checkbox",
+          "id": "video_autoplay",
+          "label": "Autoplay video",
+          "default": false
+        },
+        {
+          "type": "checkbox",
+          "id": "video_controllers",
+          "label": "Show video controllers",
+          "default": false
+        },
+        {
+          "type": "checkbox",
+          "id": "video_loop",
+          "label": "Loop video",
+          "default": false
+        },
+        {
+          "type": "checkbox",
+          "id": "video_muted",
+          "label": "Mute video",
+          "default": false
+        }
+      ]
+    }
+  ],
+
+  "presets": [
+    {
+      "name": "Responsive Reels | Aujla",
+      "blocks": [
+        {
+          "type": "custom-reel-item"
+        },
+        {
+          "type": "custom-reel-item"
+        },
+        {
+          "type": "custom-reel-item"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}
