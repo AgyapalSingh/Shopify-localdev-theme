@@ -296,6 +296,54 @@
         "padding_top": 40,
         "padding_bottom": 100
       }
+    },
+    "aujla_custom_reels_section_JiCEK6": {
+      "type": "aujla-custom-reels-section",
+      "blocks": {
+        "custom_reel_item_8gNDwj": {
+          "type": "custom-reel-item",
+          "settings": {
+            "self_hosted_video": "shopify://files/videos/Reel_1.mp4",
+            "video_autoplay": true,
+            "video_controllers": false,
+            "video_loop": true,
+            "video_muted": true
+          }
+        },
+        "custom_reel_item_6A8cAc": {
+          "type": "custom-reel-item",
+          "settings": {
+            "self_hosted_video": "shopify://files/videos/Reel_2.mp4",
+            "video_autoplay": true,
+            "video_controllers": false,
+            "video_loop": true,
+            "video_muted": true
+          }
+        },
+        "custom_reel_item_MRA9C4": {
+          "type": "custom-reel-item",
+          "settings": {
+            "self_hosted_video": "shopify://files/videos/Reel_3.mp4",
+            "video_autoplay": true,
+            "video_controllers": false,
+            "video_loop": true,
+            "video_muted": true
+          }
+        }
+      },
+      "block_order": [
+        "custom_reel_item_8gNDwj",
+        "custom_reel_item_6A8cAc",
+        "custom_reel_item_MRA9C4"
+      ],
+      "name": "Responsive Reels | Aujla",
+      "settings": {
+        "reels_section_title": "They Love Us",
+        "reels_section_description": "<p>Becuase we love them too! Our customers are our biggest fans, and they love sharing their experiences with our products.</p>",
+        "color_scheme": "",
+        "padding_top": 40,
+        "padding_bottom": 40
+      }
     }
   },
   "order": [
@@ -305,6 +353,7 @@
     "aujla_responsive_image_section_pP8d3V",
     "aujla_responsive_accordion_4rBAtN",
     "aujla_custom_icons_scroll_8yr9L3",
-    "aujla_responsive_tabs_tdLC7y"
+    "aujla_responsive_tabs_tdLC7y",
+    "aujla_custom_reels_section_JiCEK6"
   ]
 }
