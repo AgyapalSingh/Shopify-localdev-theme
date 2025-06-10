@@ -1,6 +1,15 @@
 .ag-reels-container {
-  max-width: 1200px;
   margin: auto;
   padding: 0 3rem;
-  border: 1px solid red;
+}
+
+.ag-reels-videos {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  overflow-x: scroll;
+}
+
+.ag-reels-videos video {
+  width: 300px;
 }
