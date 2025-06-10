@@ -3,15 +3,9 @@
   padding: 0 3rem;
 }
 
-.ag-reels-header {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-}
-
 .ag-reels-videos {
   display: flex;
+  justify-content: center;
   gap: 20px;
   overflow-x: scroll;
 }

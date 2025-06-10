@@ -329,12 +329,78 @@
             "video_loop": true,
             "video_muted": true
           }
+        },
+        "custom_reel_item_rTx6zd": {
+          "type": "custom-reel-item",
+          "settings": {
+            "self_hosted_video": "shopify://files/videos/Reel_1.mp4",
+            "video_autoplay": true,
+            "video_controllers": false,
+            "video_loop": true,
+            "video_muted": true
+          }
+        },
+        "custom_reel_item_KzLJ6c": {
+          "type": "custom-reel-item",
+          "settings": {
+            "self_hosted_video": "shopify://files/videos/Reel_2.mp4",
+            "video_autoplay": true,
+            "video_controllers": false,
+            "video_loop": true,
+            "video_muted": true
+          }
+        },
+        "custom_reel_item_PFWMKW": {
+          "type": "custom-reel-item",
+          "settings": {
+            "self_hosted_video": "shopify://files/videos/Reel_3.mp4",
+            "video_autoplay": true,
+            "video_controllers": false,
+            "video_loop": true,
+            "video_muted": true
+          }
+        },
+        "custom_reel_item_CrX3rw": {
+          "type": "custom-reel-item",
+          "settings": {
+            "self_hosted_video": "shopify://files/videos/Reel_1.mp4",
+            "video_autoplay": true,
+            "video_controllers": false,
+            "video_loop": true,
+            "video_muted": true
+          }
+        },
+        "custom_reel_item_mTANnQ": {
+          "type": "custom-reel-item",
+          "settings": {
+            "self_hosted_video": "shopify://files/videos/Reel_2.mp4",
+            "video_autoplay": true,
+            "video_controllers": false,
+            "video_loop": true,
+            "video_muted": true
+          }
+        },
+        "custom_reel_item_CyGetq": {
+          "type": "custom-reel-item",
+          "settings": {
+            "self_hosted_video": "shopify://files/videos/Reel_3.mp4",
+            "video_autoplay": true,
+            "video_controllers": false,
+            "video_loop": true,
+            "video_muted": true
+          }
         }
       },
       "block_order": [
         "custom_reel_item_8gNDwj",
         "custom_reel_item_6A8cAc",
-        "custom_reel_item_MRA9C4"
+        "custom_reel_item_MRA9C4",
+        "custom_reel_item_rTx6zd",
+        "custom_reel_item_KzLJ6c",
+        "custom_reel_item_PFWMKW",
+        "custom_reel_item_CrX3rw",
+        "custom_reel_item_mTANnQ",
+        "custom_reel_item_CyGetq"
       ],
       "name": "Responsive Reels | Aujla",
       "settings": {
