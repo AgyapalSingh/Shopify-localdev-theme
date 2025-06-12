@@ -1,8 +1,10 @@
 document.addEventListener('DOMContentLoaded', function () {
-  new Swiper('.mySwiper', {
+  const swiperEl = document.querySelector('.mySwiper');
+  const autoplayDelay = parseInt(swiperEl.dataset.autoplayDelay) || 4000;
+  new Swiper(swiperEl, {
     loop: true,
     autoplay: {
-      delay: 4000,
+      delay: autoplayDelay,
     },
     pagination: {
       el: '.swiper-pagination',

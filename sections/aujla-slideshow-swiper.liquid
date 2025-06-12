@@ -6,6 +6,7 @@
 <div
   class="swiper mySwiper ag-responsive-image-wrapper color-{{section.settings.color_scheme}} gradient"
   style="padding-top: {{ section.settings.padding_top }}px; padding-bottom: {{ section.settings.padding_bottom }}px;"
+  data-autoplay-delay="{{ section.settings.autoplay_delay }}"
 >
   <div class="swiper-wrapper">
     {% for block in section.blocks %}
@@ -37,6 +38,16 @@
     "groups": ["header", "footer"]
   },
   "settings": [
+    {
+      "type": "range",
+      "id": "autoplay_delay",
+      "label": "Slide Change Time (ms)",
+      "unit": "ms",
+      "min": 1000,
+      "max": 9000,
+      "step": 500,
+      "default": 4000
+    },
     {
       "type": "header",
       "content": "t:sections.all.padding.section_padding_heading"
@@ -70,12 +81,14 @@
         {
           "type": "image_picker",
           "id": "image_desktop",
-          "label": "Desktop Image"
+          "label": "Desktop Image",
+          "info": "Recommended size: 1920x700px"
         },
         {
           "type": "image_picker",
           "id": "image_mobile",
-          "label": "Mobile Image"
+          "label": "Mobile Image",
+          "info": "Recommended size: 1080x1080px"
         },
         {
           "type": "url",
