@@ -59,6 +59,7 @@
       ],
       "name": "Responsive Slideshow | Aujla",
       "settings": {
+        "autoplay_delay": 4000,
         "padding_top": 0,
         "padding_bottom": 0
       }
