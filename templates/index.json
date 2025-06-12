@@ -33,6 +33,36 @@
         "padding_bottom": 40
       }
     },
+    "aujla_slideshow_swiper_hWi6AJ": {
+      "type": "aujla-slideshow-swiper",
+      "blocks": {
+        "slide_3fiCN8": {
+          "type": "slide",
+          "settings": {
+            "image_desktop": "shopify://shop_images/Buy_2_Get_3_Main.jpg",
+            "image_mobile": "shopify://shop_images/Buy_2_Get_3_Main_Mobile.jpg",
+            "link": "shopify://collections/frontpage"
+          }
+        },
+        "slide_wBCHAt": {
+          "type": "slide",
+          "settings": {
+            "image_desktop": "shopify://shop_images/Website_Main_Desk.jpg",
+            "image_mobile": "shopify://shop_images/Website_Mobile.jpg",
+            "link": "shopify://pages/contact"
+          }
+        }
+      },
+      "block_order": [
+        "slide_3fiCN8",
+        "slide_wBCHAt"
+      ],
+      "name": "Responsive Slideshow | Aujla",
+      "settings": {
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
     "aujla_responsive_video_section_dnTDD8": {
       "type": "aujla-responsive-video-section",
       "name": "Responsive Video Section | Aujla",
@@ -447,6 +477,7 @@
   },
   "order": [
     "rich_text_3kQGqt",
+    "aujla_slideshow_swiper_hWi6AJ",
     "aujla_responsive_video_section_dnTDD8",
     "aujla_responsive_left_right_fUtPYN",
     "aujla_responsive_image_section_pP8d3V",
