@@ -17,19 +17,34 @@
         "announcement-bar-0": {
           "type": "announcement",
           "settings": {
-            "text": "Welcome to our store",
+            "text": "This is a custom developing store",
+            "link": ""
+          }
+        },
+        "announcement_8Wy6zt": {
+          "type": "announcement",
+          "settings": {
+            "text": "All sections are created manually",
+            "link": ""
+          }
+        },
+        "announcement_btyx3y": {
+          "type": "announcement",
+          "settings": {
+            "text": "For easily drag and drop the content",
             "link": ""
           }
         }
       },
       "block_order": [
-        "announcement-bar-0"
+        "announcement-bar-0",
+        "announcement_8Wy6zt",
+        "announcement_btyx3y"
       ],
-      "disabled": true,
       "settings": {
-        "auto_rotate": false,
-        "change_slides_speed": 5,
-        "color_scheme": "",
+        "auto_rotate": true,
+        "change_slides_speed": 3,
+        "color_scheme": "scheme-3",
         "show_line_separator": true,
         "show_social": false,
         "enable_country_selector": false,
@@ -43,8 +58,8 @@
         "logo_position": "middle-left",
         "mobile_logo_position": "center",
         "menu": "main-menu",
-        "menu_type_desktop": "dropdown",
-        "sticky_header_type": "on-scroll-up",
+        "menu_type_desktop": "drawer",
+        "sticky_header_type": "always",
         "show_line_separator": true,
         "color_scheme": "scheme-1",
         "menu_color_scheme": "",
