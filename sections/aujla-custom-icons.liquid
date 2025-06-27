@@ -1,23 +1,26 @@
-{{ 'aujla-custom-icons-scroll.css' | asset_url | stylesheet_tag }}
+{{ 'aujla-custom-icons.css' | asset_url | stylesheet_tag }}
 
 <div
-  class="custom-infinite-scroll-wrapper color-{{section.settings.color_scheme}} gradient"
+  class="custom-still-icons-wrapper color-{{section.settings.color_scheme}} gradient"
   style="padding-top: {{ section.settings.padding_top }}px; padding-bottom: {{ section.settings.padding_bottom }}px;"
   {% if settings.animations_reveal_on_scroll %}
     scroll-trigger animate--slide-in
   {% endif %}
 >
-  <div class="custom-scroll-icons-wrapper">
-    <div class="custom-scroll-icons-container">
+  <div class="custom-still-icons-container">
+    <div class="custom-still-icons-section-title">
+      <h2 class="still-icons-section-title">{{ section.settings['custom-still-section-title'] }}</h2>
+    </div>
+    <div class="custom-icons-grid">
       {% for block in section.blocks %}
-        <img
-          src="{{ block.settings.custom-icons | image_url }}"
-        >
-      {% endfor %}
-      {% for block in section.blocks %}
-        <img
-          src="{{ block.settings.custom-icons | image_url }}"
-        >
+        <div class="icon-item">
+          {% if block.settings['custom-still-icons'] %}
+            <img src="{{ block.settings.custom-still-icons | image_url }}" alt="Icon" class="icon-image">
+          {% endif %}
+          {% if block.settings['custom-still-icons-title'] %}
+            <div class="icon-title">{{ block.settings['custom-still-icons-title'] }}</div>
+          {% endif %}
+        </div>
       {% endfor %}
     </div>
   </div>
@@ -25,13 +28,18 @@
 
 {% schema %}
 {
-  "name": "Infinite icons scroll",
+  "name": "Custom Still Icons",
   "tag": "section",
-  "class": "infinite-icons-scroll",
+  "class": "custom-still-icons",
   "disabled_on": {
     "groups": ["header", "footer"]
   },
   "settings": [
+    {
+      "type": "text",
+      "id": "custom-still-section-title",
+      "label": "Content Title"
+    },
     {
       "type": "color_scheme",
       "id": "color_scheme",
@@ -65,45 +73,36 @@
   ],
   "blocks": [
     {
-      "name": "Add Icons for scroll",
-      "type": "custom-icons-scroll",
+      "name": "Add Still Icons",
+      "type": "custom-still-icons",
       "settings": [
         {
           "type": "image_picker",
-          "id": "custom-icons",
+          "id": "custom-still-icons",
           "label": "Add Icons"
+        },
+        {
+          "type": "richtext",
+          "id": "custom-still-icons-title",
+          "label": "Add Title"
         }
       ]
     }
   ],
+
   "presets": [
     {
-      "name": "Infinite icons scroll | Aujla",
+      "name": "Custom Still Icons List | Aujla",
       "category": "Icons",
       "blocks": [
         {
-          "type": "custom-icons-scroll"
+          "type": "custom-still-icons"
         },
         {
-          "type": "custom-icons-scroll"
+          "type": "custom-still-icons"
         },
         {
-          "type": "custom-icons-scroll"
-        },
-        {
-          "type": "custom-icons-scroll"
-        },
-        {
-          "type": "custom-icons-scroll"
-        },
-        {
-          "type": "custom-icons-scroll"
-        },
-        {
-          "type": "custom-icons-scroll"
-        },
-        {
-          "type": "custom-icons-scroll"
+          "type": "custom-still-icons"
         }
       ]
     }

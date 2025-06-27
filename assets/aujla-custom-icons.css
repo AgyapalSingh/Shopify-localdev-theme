@@ -1,0 +1,50 @@
+.custom-still-icons-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.custom-still-icons-container {
+  max-width: 1200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.custom-still-icons-section-title {
+  width: 100%;
+  text-align: center;
+}
+
+.custom-icons-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  text-align: center;
+}
+
+.icon-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.icon-image {
+  max-width: 150px;
+  height: auto;
+}
+
+.icon-title {
+  margin-top: 0.5rem;
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  .custom-icons-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .custom-icons-grid {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
