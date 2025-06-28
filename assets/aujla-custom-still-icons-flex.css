@@ -34,6 +34,10 @@
   transform: scale(1.1);
 }
 
+.icon-item-flex-active {
+  transform: scale(1.08);
+}
+
 .icon-image-flex {
   margin-top: 20px;
 }
