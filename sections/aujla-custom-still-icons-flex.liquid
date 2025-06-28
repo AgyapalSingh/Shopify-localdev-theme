@@ -15,13 +15,19 @@
       {% for block in section.blocks %}
         <div class="icon-item-flex">
           {% if block.settings['custom-still-icons-flex'] %}
-            <img src="{{ block.settings.custom-still-icons-flex | image_url }}" alt="Icon" class="icon-image-flex">
+            <img
+              src="{{ block.settings.custom-still-icons-flex | image_url  }}"
+              width="150"
+              height="150"
+              alt="Icon"
+              class="icon-image-flex"
+            >
           {% endif %}
           {% if block.settings['custom-still-icons-title-flex'] %}
-            <p class="icon-title-flex">{{ block.settings['custom-still-icons-title-flex'] }}</p>
+            <div class="icon-title-flex">{{ block.settings['custom-still-icons-title-flex'] }}</div>
           {% endif %}
           {% if block.settings['custom-still-icons-description-flex'] %}
-            <span class="icon-description-flex">{{ block.settings['custom-still-icons-description-flex'] }}</span>
+            <div class="icon-description-flex">{{ block.settings['custom-still-icons-description-flex'] }}</div>
           {% endif %}
         </div>
       {% endfor %}
