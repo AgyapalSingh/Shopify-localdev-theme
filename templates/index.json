@@ -568,6 +568,92 @@
         "padding_top": 40,
         "padding_bottom": 40
       }
+    },
+    "aujla_custom_still_icons_flex_7GNW8C": {
+      "type": "aujla-custom-still-icons-flex",
+      "blocks": {
+        "custom_still_icons_flex_jeYkNk": {
+          "type": "custom-still-icons-flex",
+          "settings": {
+            "custom-still-icons-flex": "shopify://shop_images/Clinically_Proven.jpg",
+            "custom-still-icons-title-flex": "Title",
+            "custom-still-icons-description-flex": "<p>Description</p>"
+          }
+        },
+        "custom_still_icons_flex_UKt3tq": {
+          "type": "custom-still-icons-flex",
+          "settings": {
+            "custom-still-icons-flex": "shopify://shop_images/Clinically_Proven.jpg",
+            "custom-still-icons-title-flex": "Title",
+            "custom-still-icons-description-flex": "<p>Description</p>"
+          }
+        },
+        "custom_still_icons_flex_i9HPyF": {
+          "type": "custom-still-icons-flex",
+          "settings": {
+            "custom-still-icons-flex": "shopify://shop_images/Clinically_Proven.jpg",
+            "custom-still-icons-title-flex": "Title",
+            "custom-still-icons-description-flex": "<p>Description</p>"
+          }
+        },
+        "custom_still_icons_flex_EPFVJE": {
+          "type": "custom-still-icons-flex",
+          "settings": {
+            "custom-still-icons-flex": "shopify://shop_images/Clinically_Proven.jpg",
+            "custom-still-icons-title-flex": "Title",
+            "custom-still-icons-description-flex": "<p>Description</p>"
+          }
+        },
+        "custom_still_icons_flex_PXJFGj": {
+          "type": "custom-still-icons-flex",
+          "settings": {
+            "custom-still-icons-flex": "shopify://shop_images/Clinically_Proven.jpg",
+            "custom-still-icons-title-flex": "Title",
+            "custom-still-icons-description-flex": "<p>Description</p>"
+          }
+        },
+        "custom_still_icons_flex_DiRmRE": {
+          "type": "custom-still-icons-flex",
+          "settings": {
+            "custom-still-icons-flex": "shopify://shop_images/Clinically_Proven.jpg",
+            "custom-still-icons-title-flex": "Title",
+            "custom-still-icons-description-flex": "<p>Description</p>"
+          }
+        },
+        "custom_still_icons_flex_zU8zmh": {
+          "type": "custom-still-icons-flex",
+          "settings": {
+            "custom-still-icons-flex": "shopify://shop_images/Clinically_Proven.jpg",
+            "custom-still-icons-title-flex": "Title",
+            "custom-still-icons-description-flex": "<p>Description</p>"
+          }
+        },
+        "custom_still_icons_flex_NzybDq": {
+          "type": "custom-still-icons-flex",
+          "settings": {
+            "custom-still-icons-flex": "shopify://shop_images/Clinically_Proven.jpg",
+            "custom-still-icons-title-flex": "Title",
+            "custom-still-icons-description-flex": "<p>Description</p>"
+          }
+        }
+      },
+      "block_order": [
+        "custom_still_icons_flex_jeYkNk",
+        "custom_still_icons_flex_UKt3tq",
+        "custom_still_icons_flex_i9HPyF",
+        "custom_still_icons_flex_EPFVJE",
+        "custom_still_icons_flex_PXJFGj",
+        "custom_still_icons_flex_DiRmRE",
+        "custom_still_icons_flex_zU8zmh",
+        "custom_still_icons_flex_NzybDq"
+      ],
+      "name": "Custom Still Icons List Flex | Aujla",
+      "settings": {
+        "custom-still-section-title-flex": "Content Title",
+        "color_scheme": "",
+        "padding_top": 40,
+        "padding_bottom": 40
+      }
     }
   },
   "order": [
@@ -580,6 +666,7 @@
     "aujla_custom_reels_section_JiCEK6",
     "aujla_custom_icons_scroll_8yr9L3",
     "aujla_custom_tabs_collection_8eyCWT",
-    "aujla_custom_icons_KCAFMR"
+    "aujla_custom_icons_KCAFMR",
+    "aujla_custom_still_icons_flex_7GNW8C"
   ]
 }
