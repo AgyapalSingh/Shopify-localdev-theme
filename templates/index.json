@@ -438,6 +438,92 @@
         "padding_bottom": 40
       }
     },
+    "aujla_custom_still_icons_flex_7GNW8C": {
+      "type": "aujla-custom-still-icons-flex",
+      "blocks": {
+        "custom_still_icons_flex_jeYkNk": {
+          "type": "custom-still-icons-flex",
+          "settings": {
+            "custom-still-icons-flex": "shopify://shop_images/Clinically_Proven.jpg",
+            "custom-still-icons-title-flex": "CLINICALLY PROVEN",
+            "custom-still-icons-description-flex": "<p>Description</p>"
+          }
+        },
+        "custom_still_icons_flex_UKt3tq": {
+          "type": "custom-still-icons-flex",
+          "settings": {
+            "custom-still-icons-flex": "shopify://shop_images/Sulphate.jpg",
+            "custom-still-icons-title-flex": "SULFATE FREE",
+            "custom-still-icons-description-flex": "<p>Description</p>"
+          }
+        },
+        "custom_still_icons_flex_i9HPyF": {
+          "type": "custom-still-icons-flex",
+          "settings": {
+            "custom-still-icons-flex": "shopify://shop_images/GMP.jpg",
+            "custom-still-icons-title-flex": "GMP CERTIFIED",
+            "custom-still-icons-description-flex": "<p>Description</p>"
+          }
+        },
+        "custom_still_icons_flex_EPFVJE": {
+          "type": "custom-still-icons-flex",
+          "settings": {
+            "custom-still-icons-flex": "shopify://shop_images/Paraben.jpg",
+            "custom-still-icons-title-flex": "PARABEN FREE",
+            "custom-still-icons-description-flex": "<p>Description</p>"
+          }
+        },
+        "custom_still_icons_flex_zU8zmh": {
+          "type": "custom-still-icons-flex",
+          "settings": {
+            "custom-still-icons-flex": "shopify://shop_images/Non_Toxic.jpg",
+            "custom-still-icons-title-flex": "NON TOXIC",
+            "custom-still-icons-description-flex": "<p>Description</p>"
+          }
+        },
+        "custom_still_icons_flex_NzybDq": {
+          "type": "custom-still-icons-flex",
+          "settings": {
+            "custom-still-icons-flex": "shopify://shop_images/Cruelty_Free.jpg",
+            "custom-still-icons-title-flex": "CURELTY FREE",
+            "custom-still-icons-description-flex": "<p>Description</p>"
+          }
+        },
+        "custom_still_icons_flex_PXJFGj": {
+          "type": "custom-still-icons-flex",
+          "settings": {
+            "custom-still-icons-flex": "shopify://shop_images/Plant_Based.jpg",
+            "custom-still-icons-title-flex": "PLANT-BASED INGREDIENTS",
+            "custom-still-icons-description-flex": "<p>Description</p>"
+          }
+        },
+        "custom_still_icons_flex_DiRmRE": {
+          "type": "custom-still-icons-flex",
+          "settings": {
+            "custom-still-icons-flex": "shopify://shop_images/CIR.jpg",
+            "custom-still-icons-title-flex": "COSMETIC INGREDIENT REVIEW",
+            "custom-still-icons-description-flex": "<p>Description</p>"
+          }
+        }
+      },
+      "block_order": [
+        "custom_still_icons_flex_jeYkNk",
+        "custom_still_icons_flex_UKt3tq",
+        "custom_still_icons_flex_i9HPyF",
+        "custom_still_icons_flex_EPFVJE",
+        "custom_still_icons_flex_zU8zmh",
+        "custom_still_icons_flex_NzybDq",
+        "custom_still_icons_flex_PXJFGj",
+        "custom_still_icons_flex_DiRmRE"
+      ],
+      "name": "Custom Still Icons List Flex | Aujla",
+      "settings": {
+        "custom-still-section-title-flex": "Why Uniqaya ?",
+        "color_scheme": "scheme-1282b7b2-2c87-458b-9892-c1e789daa240",
+        "padding_top": 40,
+        "padding_bottom": 40
+      }
+    },
     "aujla_custom_tabs_collection_8eyCWT": {
       "type": "aujla-custom-tabs-collection",
       "blocks": {
@@ -474,186 +560,6 @@
         "padding_top": 40,
         "padding_bottom": 40
       }
-    },
-    "aujla_custom_icons_KCAFMR": {
-      "type": "aujla-custom-icons",
-      "blocks": {
-        "custom_still_icons_CrrUTJ": {
-          "type": "custom-still-icons",
-          "settings": {
-            "custom-still-icons": "shopify://shop_images/Clinically_Proven.jpg",
-            "custom-still-icons-title": "<p>Text 1</p>"
-          }
-        },
-        "custom_still_icons_cKbDEK": {
-          "type": "custom-still-icons",
-          "settings": {
-            "custom-still-icons": "shopify://shop_images/Clinically_Proven.jpg",
-            "custom-still-icons-title": "<p>Text 1</p>"
-          }
-        },
-        "custom_still_icons_7aQUdC": {
-          "type": "custom-still-icons",
-          "settings": {
-            "custom-still-icons": "shopify://shop_images/Clinically_Proven.jpg",
-            "custom-still-icons-title": "<p>Text 1</p>"
-          }
-        },
-        "custom_still_icons_nmfcpY": {
-          "type": "custom-still-icons",
-          "settings": {
-            "custom-still-icons": "shopify://shop_images/Clinically_Proven.jpg",
-            "custom-still-icons-title": "<p>Text 1</p>"
-          }
-        },
-        "custom_still_icons_KdPneJ": {
-          "type": "custom-still-icons",
-          "settings": {
-            "custom-still-icons": "shopify://shop_images/Clinically_Proven.jpg",
-            "custom-still-icons-title": "<p>Text 1</p>"
-          }
-        },
-        "custom_still_icons_UTptVn": {
-          "type": "custom-still-icons",
-          "settings": {
-            "custom-still-icons": "shopify://shop_images/Clinically_Proven.jpg",
-            "custom-still-icons-title": "<p>Text 1</p>"
-          }
-        },
-        "custom_still_icons_n3Y6Hj": {
-          "type": "custom-still-icons",
-          "settings": {
-            "custom-still-icons": "shopify://shop_images/Clinically_Proven.jpg",
-            "custom-still-icons-title": "<p>Text 1</p>"
-          }
-        },
-        "custom_still_icons_HFyHwJ": {
-          "type": "custom-still-icons",
-          "settings": {
-            "custom-still-icons": "shopify://shop_images/Clinically_Proven.jpg",
-            "custom-still-icons-title": "<p>Text 1</p>"
-          }
-        },
-        "custom_still_icons_UHH3Kw": {
-          "type": "custom-still-icons",
-          "settings": {
-            "custom-still-icons": "shopify://shop_images/Clinically_Proven.jpg",
-            "custom-still-icons-title": "<p>Text 1</p>"
-          }
-        },
-        "custom_still_icons_rJNP8N": {
-          "type": "custom-still-icons",
-          "settings": {
-            "custom-still-icons": "shopify://shop_images/Clinically_Proven.jpg",
-            "custom-still-icons-title": "<p>Text 1</p>"
-          }
-        }
-      },
-      "block_order": [
-        "custom_still_icons_CrrUTJ",
-        "custom_still_icons_cKbDEK",
-        "custom_still_icons_7aQUdC",
-        "custom_still_icons_nmfcpY",
-        "custom_still_icons_KdPneJ",
-        "custom_still_icons_UTptVn",
-        "custom_still_icons_n3Y6Hj",
-        "custom_still_icons_HFyHwJ",
-        "custom_still_icons_UHH3Kw",
-        "custom_still_icons_rJNP8N"
-      ],
-      "name": "Custom Still Icons List | Aujla",
-      "settings": {
-        "custom-still-section-title": "Sample",
-        "color_scheme": "",
-        "padding_top": 40,
-        "padding_bottom": 40
-      }
-    },
-    "aujla_custom_still_icons_flex_7GNW8C": {
-      "type": "aujla-custom-still-icons-flex",
-      "blocks": {
-        "custom_still_icons_flex_jeYkNk": {
-          "type": "custom-still-icons-flex",
-          "settings": {
-            "custom-still-icons-flex": "shopify://shop_images/Clinically_Proven.jpg",
-            "custom-still-icons-title-flex": "Title",
-            "custom-still-icons-description-flex": "<p>Description</p>"
-          }
-        },
-        "custom_still_icons_flex_UKt3tq": {
-          "type": "custom-still-icons-flex",
-          "settings": {
-            "custom-still-icons-flex": "shopify://shop_images/Clinically_Proven.jpg",
-            "custom-still-icons-title-flex": "Title",
-            "custom-still-icons-description-flex": "<p>Description</p>"
-          }
-        },
-        "custom_still_icons_flex_i9HPyF": {
-          "type": "custom-still-icons-flex",
-          "settings": {
-            "custom-still-icons-flex": "shopify://shop_images/Clinically_Proven.jpg",
-            "custom-still-icons-title-flex": "Title",
-            "custom-still-icons-description-flex": "<p>Description</p>"
-          }
-        },
-        "custom_still_icons_flex_EPFVJE": {
-          "type": "custom-still-icons-flex",
-          "settings": {
-            "custom-still-icons-flex": "shopify://shop_images/Clinically_Proven.jpg",
-            "custom-still-icons-title-flex": "Title",
-            "custom-still-icons-description-flex": "<p>Description</p>"
-          }
-        },
-        "custom_still_icons_flex_PXJFGj": {
-          "type": "custom-still-icons-flex",
-          "settings": {
-            "custom-still-icons-flex": "shopify://shop_images/Clinically_Proven.jpg",
-            "custom-still-icons-title-flex": "Title",
-            "custom-still-icons-description-flex": "<p>Description</p>"
-          }
-        },
-        "custom_still_icons_flex_DiRmRE": {
-          "type": "custom-still-icons-flex",
-          "settings": {
-            "custom-still-icons-flex": "shopify://shop_images/Clinically_Proven.jpg",
-            "custom-still-icons-title-flex": "Title",
-            "custom-still-icons-description-flex": "<p>Description</p>"
-          }
-        },
-        "custom_still_icons_flex_zU8zmh": {
-          "type": "custom-still-icons-flex",
-          "settings": {
-            "custom-still-icons-flex": "shopify://shop_images/Clinically_Proven.jpg",
-            "custom-still-icons-title-flex": "Title",
-            "custom-still-icons-description-flex": "<p>Description</p>"
-          }
-        },
-        "custom_still_icons_flex_NzybDq": {
-          "type": "custom-still-icons-flex",
-          "settings": {
-            "custom-still-icons-flex": "shopify://shop_images/Clinically_Proven.jpg",
-            "custom-still-icons-title-flex": "Title",
-            "custom-still-icons-description-flex": "<p>Description</p>"
-          }
-        }
-      },
-      "block_order": [
-        "custom_still_icons_flex_jeYkNk",
-        "custom_still_icons_flex_UKt3tq",
-        "custom_still_icons_flex_i9HPyF",
-        "custom_still_icons_flex_EPFVJE",
-        "custom_still_icons_flex_PXJFGj",
-        "custom_still_icons_flex_DiRmRE",
-        "custom_still_icons_flex_zU8zmh",
-        "custom_still_icons_flex_NzybDq"
-      ],
-      "name": "Custom Still Icons List Flex | Aujla",
-      "settings": {
-        "custom-still-section-title-flex": "Content Title",
-        "color_scheme": "",
-        "padding_top": 40,
-        "padding_bottom": 40
-      }
     }
   },
   "order": [
@@ -665,8 +571,7 @@
     "aujla_responsive_accordion_4rBAtN",
     "aujla_custom_reels_section_JiCEK6",
     "aujla_custom_icons_scroll_8yr9L3",
-    "aujla_custom_tabs_collection_8eyCWT",
-    "aujla_custom_icons_KCAFMR",
-    "aujla_custom_still_icons_flex_7GNW8C"
+    "aujla_custom_still_icons_flex_7GNW8C",
+    "aujla_custom_tabs_collection_8eyCWT"
   ]
 }
