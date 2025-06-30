@@ -4,7 +4,7 @@
 {{ 'aujla-mini-slideshow.css' | asset_url | stylesheet_tag }}
 
 <div
-  class="my-mini-swiper ag-responsive-image-wrapper color-{{section.settings.color_scheme}} gradient"
+  class="my-mini-swiper color-{{section.settings.color_scheme}} gradient"
   style="padding-top: {{ section.settings.padding_top }}px; padding-bottom: {{ section.settings.padding_bottom }}px;"
   data-autoplay-delay="{{ section.settings.autoplay_delay }}"
 >
@@ -14,13 +14,14 @@
         {% for block in section.blocks %}
           <div class="swiper-slide">
             <picture>
-              <source media="(max-width: 749px)" srcset="{{ block.settings.image_mobile | image_url: width: 750 }}">
+              <source media="(max-width: 749px)" srcset="{{ block.settings.image_mobile | image_url}}">
               <img
                 src="{{ block.settings.image_desktop | image_url }}"
                 alt="Slide {{ forloop.index }}"
                 loading="lazy"
                 height="100%"
                 width="100%"
+                class="swiper-slide-image"
               >
             </picture>
           </div>

@@ -1,28 +1,50 @@
 .my-mini-swiper {
-  border: 1px solid red;
-  width: 100%;
-  height: 100%;
-}
-
-.swiper {
-  width: 100%;
-  height: 100%;
-}
-
-.mini-swiper-slide {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.swiper-slide img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+.mini-slideshow-container {
+  max-width: 1200px;
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
 }
 
 .swiper {
+  width: 100%;
+  height: 100%;
   margin-left: auto;
   margin-right: auto;
+}
+.mini-slideshow-left {
+  width: 50%;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  border-radius: 150px 10px 150px 10px;
+}
+
+.mini-slideshow-right {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+@media screen and (max-width: 810px) {
+  .mini-slideshow-container {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .mini-slideshow-left {
+    width: 95%;
+    overflow: hidden;
+    border-radius: 50px 10px 50px 10px;
+  }
+
+  .mini-slideshow-right {
+    width: 95%;
+  }
 }
