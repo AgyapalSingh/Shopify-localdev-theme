@@ -36,6 +36,11 @@
       <div class="mini-slideshow-description">
         {{ section.settings.mini_slideshow_description }}
       </div>
+      {% if section.settings.button_label and section.settings.button_link %}
+        <a href="{{ section.settings.button_link }}" class="mini-slideshow-button">
+          {{ section.settings.button_label }}
+        </a>
+      {% endif %}
     </div>
   </div>
 </div>
@@ -58,6 +63,23 @@
       "type": "richtext",
       "id": "mini_slideshow_description",
       "label": "Description"
+    },
+    {
+      "type": "text",
+      "id": "button_label",
+      "label": "Button Label",
+      "default": "Learn More"
+    },
+    {
+      "type": "url",
+      "id": "button_link",
+      "label": "Button Link"
+    },
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "label": "t:sections.all.colors.label",
+      "default": "scheme-1"
     },
     {
       "type": "range",

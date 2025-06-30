@@ -30,6 +30,22 @@
   justify-content: center;
 }
 
+.mini-slideshow-button {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 24px;
+  background-color: #000;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
+}
+
+.mini-slideshow-button:hover {
+  background-color: #333;
+}
+
 @media screen and (min-width: 769px) and (max-width: 1200px) {
   .mini-slideshow-container {
     max-width: 768px;
