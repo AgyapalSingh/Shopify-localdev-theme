@@ -19,9 +19,8 @@
 }
 .mini-slideshow-left {
   width: 50%;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
   overflow: hidden;
-  border-radius: 150px 10px 150px 10px;
+  border-radius: 20px;
 }
 
 .mini-slideshow-right {
@@ -41,7 +40,6 @@
   .mini-slideshow-left {
     width: 95%;
     overflow: hidden;
-    border-radius: 50px 10px 50px 10px;
   }
 
   .mini-slideshow-right {
