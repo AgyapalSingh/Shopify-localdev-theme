@@ -20,7 +20,7 @@
 .mini-slideshow-left {
   width: 50%;
   overflow: hidden;
-  border-radius: 20px;
+  border-radius: 8px;
 }
 
 .mini-slideshow-right {
@@ -30,7 +30,17 @@
   justify-content: center;
 }
 
-@media screen and (max-width: 810px) {
+@media screen and (min-width: 769px) and (max-width: 1200px) {
+  .mini-slideshow-container {
+    max-width: 768px;
+  }
+  .mini-slideshow-left {
+    width: 50%;
+    overflow: hidden;
+  }
+}
+
+@media screen and (max-width: 768px) {
   .mini-slideshow-container {
     flex-direction: column;
     align-items: center;
@@ -43,6 +53,6 @@
   }
 
   .mini-slideshow-right {
-    width: 95%;
+    width: 85%;
   }
 }
