@@ -524,6 +524,40 @@
         "padding_bottom": 40
       }
     },
+    "aujla_mini_slideshow_6FFGPK": {
+      "type": "aujla-mini-slideshow",
+      "blocks": {
+        "mini_slide_WJNURk": {
+          "type": "mini_slide",
+          "settings": {
+            "image_desktop": "shopify://shop_images/Manufacturing-Plant.webp",
+            "image_mobile": "shopify://shop_images/Manufacturing-Plant.webp"
+          }
+        },
+        "mini_slide_g7LBBi": {
+          "type": "mini_slide",
+          "settings": {
+            "image_desktop": "shopify://shop_images/Manufacturing-Plant.webp",
+            "image_mobile": "shopify://shop_images/Manufacturing-Plant.webp"
+          }
+        }
+      },
+      "block_order": [
+        "mini_slide_WJNURk",
+        "mini_slide_g7LBBi"
+      ],
+      "name": "Responsive Mini Slideshow | Aujla",
+      "settings": {
+        "mini_slideshow_title": "Tinted Sunscreen SPF 50 PA+++",
+        "mini_slideshow_description": "<p><strong>Get a No-makeup makeup Look</strong></p><p>Along with sun protection, this hybrid tinted sunscreen has a tint that acts as a primer and foundation. Use the two finger rule to apply the sunscreen, and you can create a natural no-makeup makeup look. It leaves no white cast, just radiant glow for hours!<br/></p>",
+        "button_label": "About Us",
+        "button_link": "shopify://policies/privacy-policy",
+        "color_scheme": "scheme-1",
+        "autoplay_delay": 4000,
+        "padding_top": 40,
+        "padding_bottom": 40
+      }
+    },
     "aujla_custom_tabs_collection_8eyCWT": {
       "type": "aujla-custom-tabs-collection",
       "blocks": {
@@ -560,37 +594,6 @@
         "padding_top": 40,
         "padding_bottom": 40
       }
-    },
-    "aujla_mini_slideshow_qMTHAb": {
-      "type": "aujla-mini-slideshow",
-      "blocks": {
-        "mini_slide_reQeG9": {
-          "type": "mini_slide",
-          "settings": {
-            "image_desktop": "shopify://shop_images/Manufacturing-Plant.webp",
-            "image_mobile": "shopify://shop_images/Manufacturing-Plant.webp"
-          }
-        },
-        "mini_slide_6HLeNQ": {
-          "type": "mini_slide",
-          "settings": {
-            "image_desktop": "shopify://shop_images/Manufacturing-Plant.webp",
-            "image_mobile": "shopify://shop_images/Manufacturing-Plant.webp"
-          }
-        }
-      },
-      "block_order": [
-        "mini_slide_reQeG9",
-        "mini_slide_6HLeNQ"
-      ],
-      "name": "Responsive Mini Slideshow | Aujla",
-      "settings": {
-        "mini_slideshow_title": "Tinted Sunscreen SPF 50 PA+++",
-        "mini_slideshow_description": "<p><strong>Get a No-makeup makeup Look </strong></p><p></p><p>Along with sun protection, this hybrid tinted sunscreen has a tint that acts as a primer and foundation. Use the two finger rule to apply the sunscreen, and you can create a natural no-makeup makeup look. It leaves no white cast, just radiant glow for hours!<br/><br/><br/></p>",
-        "autoplay_delay": 4000,
-        "padding_top": 40,
-        "padding_bottom": 40
-      }
     }
   },
   "order": [
@@ -603,7 +606,7 @@
     "aujla_custom_reels_section_JiCEK6",
     "aujla_custom_icons_scroll_8yr9L3",
     "aujla_custom_still_icons_flex_7GNW8C",
-    "aujla_custom_tabs_collection_8eyCWT",
-    "aujla_mini_slideshow_qMTHAb"
+    "aujla_mini_slideshow_6FFGPK",
+    "aujla_custom_tabs_collection_8eyCWT"
   ]
 }
