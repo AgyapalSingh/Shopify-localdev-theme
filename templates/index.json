@@ -33,6 +33,76 @@
         "padding_bottom": 40
       }
     },
+    "featured_product_4JYDP3": {
+      "type": "featured-product",
+      "blocks": {
+        "text_AWAHNp": {
+          "type": "text",
+          "settings": {
+            "text": "{{ section.settings.product.vendor }}",
+            "text_style": "uppercase"
+          }
+        },
+        "title_Gtb3JX": {
+          "type": "title",
+          "settings": {
+            "heading_size": "h1"
+          }
+        },
+        "price_L9j9fV": {
+          "type": "price",
+          "settings": {}
+        },
+        "variant_picker_8mKi8x": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button",
+            "swatch_shape": "circle"
+          }
+        },
+        "quantity_selector_mcYxzf": {
+          "type": "quantity_selector",
+          "settings": {}
+        },
+        "buy_buttons_YtRJUU": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true,
+            "show_gift_card_recipient": true
+          }
+        },
+        "share_GH9qdm": {
+          "type": "share",
+          "settings": {
+            "share_label": "Share"
+          }
+        }
+      },
+      "block_order": [
+        "text_AWAHNp",
+        "title_Gtb3JX",
+        "price_L9j9fV",
+        "variant_picker_8mKi8x",
+        "quantity_selector_mcYxzf",
+        "buy_buttons_YtRJUU",
+        "share_GH9qdm"
+      ],
+      "name": "t:sections.featured-product.presets.name",
+      "settings": {
+        "product": "the-multi-managed-snowboard",
+        "color_scheme": "",
+        "secondary_background": false,
+        "media_size": "medium",
+        "constrain_to_viewport": true,
+        "media_fit": "contain",
+        "media_position": "left",
+        "image_zoom": "lightbox",
+        "hide_variants": false,
+        "enable_video_looping": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "aujla_custom_tabs_content_LkRm6y": {
       "type": "aujla-custom-tabs-content",
       "blocks": {
@@ -598,6 +668,7 @@
   },
   "order": [
     "rich_text_3kQGqt",
+    "featured_product_4JYDP3",
     "aujla_custom_tabs_content_LkRm6y",
     "aujla_slideshow_swiper_hWi6AJ",
     "aujla_responsive_video_section_dnTDD8",
