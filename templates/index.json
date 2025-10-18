@@ -36,32 +36,32 @@
     "aujla_custom_tabs_content_LkRm6y": {
       "type": "aujla-custom-tabs-content",
       "blocks": {
-        "tabs_content_items_hBAYj3": {
+        "tabs_content_items_tzC8eB": {
           "type": "tabs-content-items",
           "settings": {
-            "tabs-content-title": "Sample Tabs Title",
-            "tabs-content-content": "<p>Sample Tabs Content</p>"
+            "tabs-content-title": "Tabs 1",
+            "tabs-content-content": "<p>Sample Tabs Content 1</p>"
           }
         },
         "tabs_content_items_pmygwx": {
           "type": "tabs-content-items",
           "settings": {
-            "tabs-content-title": "Sample Tabs Title",
-            "tabs-content-content": "<p>Sample Tabs Content</p>"
+            "tabs-content-title": "Tab 2",
+            "tabs-content-content": "<p>Sample Tabs Content 2</p>"
           }
         },
-        "tabs_content_items_tzC8eB": {
+        "tabs_content_items_hBAYj3": {
           "type": "tabs-content-items",
           "settings": {
-            "tabs-content-title": "Sample Tabs Title",
-            "tabs-content-content": "<p>Sample Tabs Content</p>"
+            "tabs-content-title": "Tab 3",
+            "tabs-content-content": "<p>Sample Tabs Content 3</p>"
           }
         }
       },
       "block_order": [
-        "tabs_content_items_hBAYj3",
+        "tabs_content_items_tzC8eB",
         "tabs_content_items_pmygwx",
-        "tabs_content_items_tzC8eB"
+        "tabs_content_items_hBAYj3"
       ],
       "name": "Responsive Tabs For Content | Aujla",
       "settings": {
@@ -594,43 +594,6 @@
         "padding_top": 40,
         "padding_bottom": 40
       }
-    },
-    "aujla_custom_tabs_collection_8eyCWT": {
-      "type": "aujla-custom-tabs-collection",
-      "blocks": {
-        "tabs_collection_items_XL7fcE": {
-          "type": "tabs-collection-items",
-          "settings": {
-            "tabs-collection-title": "Facewash",
-            "tabs-collection-content": "automated-collection"
-          }
-        },
-        "tabs_collection_items_imcExp": {
-          "type": "tabs-collection-items",
-          "settings": {
-            "tabs-collection-title": "Sunscreens",
-            "tabs-collection-content": "frontpage"
-          }
-        },
-        "tabs_collection_items_WDJEgf": {
-          "type": "tabs-collection-items",
-          "settings": {
-            "tabs-collection-title": "Moisturizer",
-            "tabs-collection-content": "hydrogen"
-          }
-        }
-      },
-      "block_order": [
-        "tabs_collection_items_XL7fcE",
-        "tabs_collection_items_imcExp",
-        "tabs_collection_items_WDJEgf"
-      ],
-      "name": "Responsive Tabs Collection | Aujla",
-      "settings": {
-        "color_scheme": "scheme-1282b7b2-2c87-458b-9892-c1e789daa240",
-        "padding_top": 40,
-        "padding_bottom": 40
-      }
     }
   },
   "order": [
@@ -644,7 +607,6 @@
     "aujla_custom_reels_section_JiCEK6",
     "aujla_custom_icons_scroll_8yr9L3",
     "aujla_custom_still_icons_flex_7GNW8C",
-    "aujla_mini_slideshow_6FFGPK",
-    "aujla_custom_tabs_collection_8eyCWT"
+    "aujla_mini_slideshow_6FFGPK"
   ]
 }
