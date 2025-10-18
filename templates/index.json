@@ -33,6 +33,43 @@
         "padding_bottom": 40
       }
     },
+    "aujla_custom_tabs_content_LkRm6y": {
+      "type": "aujla-custom-tabs-content",
+      "blocks": {
+        "tabs_content_items_hBAYj3": {
+          "type": "tabs-content-items",
+          "settings": {
+            "tabs-content-title": "Sample Tabs Title",
+            "tabs-content-content": "<p>Sample Tabs Content</p>"
+          }
+        },
+        "tabs_content_items_pmygwx": {
+          "type": "tabs-content-items",
+          "settings": {
+            "tabs-content-title": "Sample Tabs Title",
+            "tabs-content-content": "<p>Sample Tabs Content</p>"
+          }
+        },
+        "tabs_content_items_tzC8eB": {
+          "type": "tabs-content-items",
+          "settings": {
+            "tabs-content-title": "Sample Tabs Title",
+            "tabs-content-content": "<p>Sample Tabs Content</p>"
+          }
+        }
+      },
+      "block_order": [
+        "tabs_content_items_hBAYj3",
+        "tabs_content_items_pmygwx",
+        "tabs_content_items_tzC8eB"
+      ],
+      "name": "Responsive Tabs For Content | Aujla",
+      "settings": {
+        "color_scheme": "",
+        "padding_top": 40,
+        "padding_bottom": 40
+      }
+    },
     "aujla_slideshow_swiper_hWi6AJ": {
       "type": "aujla-slideshow-swiper",
       "blocks": {
@@ -598,6 +635,7 @@
   },
   "order": [
     "rich_text_3kQGqt",
+    "aujla_custom_tabs_content_LkRm6y",
     "aujla_slideshow_swiper_hWi6AJ",
     "aujla_responsive_video_section_dnTDD8",
     "aujla_responsive_left_right_fUtPYN",
