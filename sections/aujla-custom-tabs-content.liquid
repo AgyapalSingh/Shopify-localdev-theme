@@ -1,3 +1,6 @@
+{{ 'aujla-custom-tabs-content.css' | asset_url | stylesheet_tag }}
+<script src="{{ 'aujla-custom-tabs-content.js' | asset_url }}" defer></script>
+
 <div
   class="custom-responsive-tabs-content-wrapper color-{{ section.settings.color_scheme }} gradient"
   style="padding-top: {{ section.settings.padding_top }}px; padding-bottom: {{ section.settings.padding_bottom }}px;"
@@ -24,72 +27,6 @@
     </div>
   {% endif %}
 </div>
-
-<script>
-  document.addEventListener('DOMContentLoaded', function () {
-    const tabButtons = document.querySelectorAll('.tabs-content-button');
-    const tabPanels = document.querySelectorAll('.tab-panel');
-
-    if (tabButtons.length && tabPanels.length) {
-      tabButtons.forEach((button) => {
-        button.addEventListener('click', function () {
-          const tabId = this.getAttribute('data-tab');
-
-          tabButtons.forEach((btn) => btn.classList.remove('active'));
-          tabPanels.forEach((panel) => panel.classList.remove('active'));
-
-          this.classList.add('active');
-          document.getElementById(tabId).classList.add('active');
-        });
-      });
-    }
-  });
-</script>
-
-<style>
-  .tabs-content-nav {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    border-bottom: 1px solid #ddd;
-  }
-
-  .tabs-content-button {
-    padding: 10px 16px;
-    background: none;
-    border: none;
-    cursor: pointer;
-    font-weight: 500;
-    transition: all 0.3s ease;
-    color: #555;
-  }
-
-  .tabs-content-button.active {
-    border-bottom: 2px solid #111;
-    color: #111;
-  }
-
-  .tab-panel {
-    display: none;
-    padding-top: 20px;
-    animation: fadeIn 0.3s ease-in-out;
-  }
-
-  .tab-panel.active {
-    display: block;
-  }
-
-  @keyframes fadeIn {
-    from {
-      opacity: 0;
-      transform: translateY(10px);
-    }
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
-</style>
 
 {% schema %}
 {

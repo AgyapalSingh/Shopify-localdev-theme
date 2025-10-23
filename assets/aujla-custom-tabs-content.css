@@ -1,0 +1,41 @@
+.custom-responsive-tabs-content-wrapper {
+  margin: auto;
+  padding: 0 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.tabs-content-nav {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+}
+
+.tabs-content-button {
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 16px;
+  transition: all 0.3s ease;
+  border-bottom: 2px solid rgb(240, 240, 240);
+  border-radius: 5px 5px 0 0;
+  background: transparent;
+  font-family: var(--font-heading-family);
+}
+
+.tabs-content-button.active {
+  border-bottom: 2px solid #000;
+}
+
+.tabs-content-content .tab-panel {
+  display: none;
+}
+
+.tabs-content-content .tab-panel.active {
+  display: block;
+  max-width: 1200px;
+  min-height: 300px;
+  margin: auto;
+}
